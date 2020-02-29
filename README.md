@@ -49,6 +49,9 @@ $ csrutil disable
 重新開機 ➤ 進入正常模式 ➤ 開啟終端機，執行指令：
 
 ```
+// 若是 Read-Only file system 先執行執行指令
+$ sudo mount -uw /
+
 // 執行後，詢問並輸入登入用戶的密碼
 $ sudo mv /sbin/mount_ntfs /sbin/mount_ntfs.original
 

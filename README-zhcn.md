@@ -49,6 +49,9 @@ $ csrutil disable
 重新开机 ➤ 进入正常模式 ➤ 开启终端机，执行指令：
 
 ```
+// 若显示 Read-only file system 使用这个命令挂载读写权限
+$ sudo mount -uw /
+
 // 执行后，询问并输入登入用户的密码
 $ sudo mv /sbin/mount_ntfs /sbin/mount_ntfs.original
 
